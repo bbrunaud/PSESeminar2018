@@ -16,8 +16,8 @@ Pkg.add("JuMP")
 Pkg.add("Clp")
 ```
 
-### Install [gurobi](http://www.gurobi.com) 
-1. Download and install gurobi
+### Install [Gurobi](http://www.gurobi.com) 
+1. Download and install Gurobi
 2. Set the variable GUROBI_HOME to point to the installation path
 3. 
 ```julia
