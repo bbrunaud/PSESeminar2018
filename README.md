@@ -13,8 +13,8 @@ Windows user can alternatively install [JuliaPro](https://juliacomputing.com/pro
 ### Install [JuMP](https://github.com/JuliaOpt/JuMP.jl) 
 ```julia
 Pkg.add("JuMP")
-Pkg.add("Clp")
 ```
+To get started with JuMP you can take a look at the [documentation]("http://jump.readthedocs.io")
 
 ### Install [Gurobi](http://www.gurobi.com) 
 1. Download and install Gurobi
@@ -59,4 +59,24 @@ Pkg.clone("https://github.com/jalving/Plasmo.jl.git")
 Pkg.clone("https://github.com/bbrunaud/PlasmoAlgorithms.jl.git")
 ```
 
+## Other Solvers Available in Julia
+### External Solvers
+- [CPLEX]("https://github.com/JuliaOpt/CPLEX.jl")
+- [IPOPT](https://github.com/JuliaOpt/Ipopt.jl")
+- [BARON]("https://github.com/joehuchette/BARON.jl")
+- [OSQP]("http://osqp.readthedocs.io/en/latest/")
+- KNITRO
+- MOSEK
+- SCIP
+- XPRESS
+- CSDP
+- SCS
+- ECOS
+
+
+### Solvers written in Julia
+- [Pajarito]("https://github.com/JuliaOpt/Pajarito.jl")
+- [POD]("https://github.com/lanl-ansi/POD.jl")
+- [Katana]("https://github.com/lanl-ansi/Katana.jl")
+- [Juniper]("https://github.com/lanl-ansi/Juniper.jl")
 
