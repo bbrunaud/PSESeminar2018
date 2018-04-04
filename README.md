@@ -45,4 +45,10 @@ For visualization we will use the [Plots](https://github.com/JuliaPlots/Plots.jl
 Pkg.add("Plots")
 ```
 
+## Install Plasmo and PlasmoAlgorithms
+```julia
+Pkg.clone("https://github.com/jalving/Plasmo.jl.git")
+Pkg.clone("https://github.com/bbrunaud/PlasmoAlgorithms.jl.git")
+```
+
 
