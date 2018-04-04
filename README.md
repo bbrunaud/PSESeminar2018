@@ -10,19 +10,26 @@ Windows user can alternatively install [JuliaPro](https://juliacomputing.com/pro
 
 ## Install Basic JuMP packages
 
-To install [JuMP](https://github.com/JuliaOpt/JuMP.jl) and the open-source LP/MIP solvers [Clp](https://projects.coin-or.org/Clp) and [Cbc](https://projects.coin-or.org/Cbc)  run the following code:
+### Install [JuMP](https://github.com/JuliaOpt/JuMP.jl) 
 ```julia
 Pkg.add("JuMP")
 Pkg.add("Clp")
 ```
-If you have a previous installation of Julia,
-be sure to update your packages to the latest version by running ``Pkg.update()``.
+
+### Install [gurobi](http://www.gurobi.com) 
+1. Download and install gurobi
+2. Set the variable GUROBI_HOME to point to the installation path
+3. 
+```julia
+Pkg.add("Gurobi")
+```
+4. Set your license
 
 To test that your installation is working, run the following code (the first time you run the code you may see the message like "INFO: Precompiling stale cache ..." for a few seconds):
 
 ```julia
-using JuMP, Cbc
-m = Model(solver=CbcSolver())
+using JuMP, Gurobi
+m = Model(solver=GurobiSolver())
 @variable(m, x >= 0, Int)
 @variable(m, y >= 0)
 @constraint(m, 2x + y <= 1)
@@ -43,6 +50,7 @@ getvalue(y) = 1.0
 For visualization we will use the [Plots](https://github.com/JuliaPlots/Plots.jl) package, which can be installed by running:
 ```julia
 Pkg.add("Plots")
+Pkg.add("GraphPlots")
 ```
 
 ## Install Plasmo and PlasmoAlgorithms
